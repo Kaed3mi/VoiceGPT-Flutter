@@ -32,7 +32,7 @@ class HomeView extends StatelessWidget {
                                 itemCount: notifier.getData!.length,
                                 itemBuilder: (context, index) {
                                   return Text(
-                                    notifier.getData![index].text,
+                                    notifier.getData![index].message.content,
                                     style: const TextStyle(
                                       inherit: false,
                                       fontSize: 18.0,
